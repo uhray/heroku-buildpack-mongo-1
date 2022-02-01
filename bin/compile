@@ -23,7 +23,7 @@ echo "-----> Downloading and installing mongodb version ${mongo_version}..."
 
 file_name="mongodb-database-tools-${os_id}-x86_64-${mongo_version}.tgz"
 folder_name=`echo "$file_name" | sed 's/\.tgz$//'`
-download_url="https://fastdl.mongodb.org/linux/${file_name}"
+download_url="https://fastdl.mongodb.org/tools/db/${file_name}"
 echo "mongo url: $download_url"
 curl $download_url -s -o - | tar xzf - -C /tmp
 
